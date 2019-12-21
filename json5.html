@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="id01"></div>
+<script>
+
+myFunction([
+{
+"display": "Google",
+"url": "https://www.google.co.in/?gws_rd=ssl"
+},
+{
+"display": "NDTV",
+"url": "http://www.ndtv.com/"
+},
+{
+"display": "Google Scholar",
+"url": "https://scholar.google.co.in/"
+}
+]);
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+</html>

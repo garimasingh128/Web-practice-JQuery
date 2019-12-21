@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = '{"employees":[' +
+'{"firstName":"Kumar","lastName":"Abhishek" },' +
+'{"firstName":"Kumar","lastName":"Abhinav" },' +
+'{"firstName":"Pushpa","lastName":"Kumari" }]}';
+
+var obj = eval ("(" + txt + ")");
+
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+</body>
+</html>

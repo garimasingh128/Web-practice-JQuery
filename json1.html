@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var employees = [
+    {
+    "firstName":"Kumar",
+    "lastName":"Abhishek"
+    }, 
+    {
+    "firstName":"Kumar",
+    "lastName":"Abhinav"
+    },
+    {
+    "firstName":"Pushpa",
+    "lastName":"Kumari"
+    },
+];
+
+employees[0].firstName="Sinha";
+document.getElementById("demo").innerHTML =
+employees[0].firstName + " " + employees[0].lastName;
+</script>
+
+</body>
+</html>
